@@ -27,8 +27,8 @@ import javafx.util.Duration;
  */
 public class Coloris extends Application {
 
-    private static final int WIDTH = 700;
-    private static final int HEIGHT = 650;
+    private static final double WIDTH = 700;
+    private static final double HEIGHT = 650;
     private static final double BLOCK_SIZE = WIDTH / 28;
     private static final double SQUARE_MATRIX_WIDTH = SquareMatrix.DEFAULT_NUM_COLUMNS * BLOCK_SIZE;
     private static final double SQUARE_MATRIX_HEIGHT = (SquareMatrix.DEFAULT_NUM_ROWS + Block.DEFAULT_NUM_SQUARES) * BLOCK_SIZE;   

@@ -21,7 +21,7 @@ Once the block hits bottom of the well, or another block, the following rule is 
 
 Font used for the game logo, *game over* label and *score* label can be found [here](https://www.dafont.com/computerfont.font).
 *Score counter* font can be found [here](https://www.dafont.com/digital-7.font).
-Music is extracted from this [video](https://www.youtube.com/watch?v=BLX5HAIlRLs&feature=youtu.be&t=9m15s).
+Music is extracted from [this video](https://www.youtube.com/watch?v=BLX5HAIlRLs&feature=youtu.be&t=9m15s).
 
 ## Note to the reader of this README
 

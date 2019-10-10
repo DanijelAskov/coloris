@@ -17,11 +17,11 @@ The gameplay bears resemblance to *Tetris* and *Columns*: blocks, consisting of 
 The falling block **can be moved horizontally** in both directions (LEFT and RIGHT navigation keys), and its falling **can be sped up** (DOWN navigation key).
 Once the block hits bottom of the well, or another block, the following rule is applied: if **three or more** squares of the **same** color are **adjacent**, they **disappear**, blocks **above** them **fall down**, which **may trigger a chain reaction**. If five or more squares disappear, bottom row disappears, regardless of colors of the squares within it.
 
-## Fonts and music
+## Fonts and audio
 
 Font used for the game logo, *game over* label and *score* label can be found [here](https://www.dafont.com/computerfont.font).
 *Score counter* font can be found [here](https://www.dafont.com/digital-7.font).
-Music is extracted from [this video](https://www.youtube.com/watch?v=BLX5HAIlRLs&feature=youtu.be&t=9m15s).
+Audio was extracted from [this YouTube video](https://www.youtube.com/watch?v=BLX5HAIlRLs&feature=youtu.be&t=9m15s).
 
 ## Note to the reader of this README
 

@@ -6,9 +6,10 @@
 
 A 2D JavaFX application inspired by *Coloris*, a single-player puzzle video game, that was originally released in 1990, for *Comodore Amiga* family of personal computers.
 
-## Tools used for development
+## Setup
 
-This application was developed using IntelliJ IDEA (Community Edition) IDE.
+This project contains an embedded [Gradle](https://docs.gradle.org/current/userguide/userguide.html) to build the project. 
+From the command line, run `gradlew run` (Windows) or `./gradlew run` (macOS and Linux) to download the Gradle wrapper and dependencies, compile the code, and launch the game.
 
 ## Gameplay
 

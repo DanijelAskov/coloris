@@ -61,7 +61,7 @@ public class Coloris extends Application {
     
     private Scene scene;
     
-    private final Media media = new Media(Coloris.class.getResource("resources/music.mp3").toExternalForm());
+    private final Media media = new Media(Thread.currentThread().getContextClassLoader().getResource("music/music.mp3").toExternalForm());
     private final MediaPlayer mediaPlayer = new MediaPlayer(media);
 
     @Override

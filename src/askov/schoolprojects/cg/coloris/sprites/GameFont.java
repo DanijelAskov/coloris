@@ -38,10 +38,10 @@ public class GameFont {
         try {
             switch (fontType) {
                 case SEGMENTED_DISPLAY:
-                    font = Font.loadFont(GameFont.class.getResource("resources/digital-7-mono.ttf").toExternalForm(), size);
+                    font = Font.loadFont(Thread.currentThread().getContextClassLoader().getResource("fonts/digital-7-mono.ttf").toExternalForm(), size);
                     break;
                 case MAIN_GAME_FONT:
-                    font = Font.loadFont(GameFont.class.getResource("resources/computerfont.ttf").toExternalForm(), size);
+                    font = Font.loadFont(Thread.currentThread().getContextClassLoader().getResource("fonts/computerfont.ttf").toExternalForm(), size);
                     break;
             }
         } catch (Exception exception) {

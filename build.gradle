@@ -19,18 +19,6 @@ application {
     mainClassName = 'askov.schoolprojects.cg.coloris.Coloris'
 }
 
-// TODO Migrate to Gradle Java project layout https://docs.gradle.org/current/userguide/java_plugin.html#sec:java_project_layout
-sourceSets {
-    main {
-        java {
-            srcDirs 'src'
-        }
-        resources {
-            srcDirs 'resources'
-        }
-    }
-}
-
 javafx {
     version = JavaVersion.VERSION_11
     modules = ['javafx.controls', 'javafx.media']

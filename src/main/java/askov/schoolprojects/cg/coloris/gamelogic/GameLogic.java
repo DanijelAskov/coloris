@@ -56,20 +56,20 @@ public class GameLogic {
     
     private final LabeledValue score;
 
-    public GameLogic(SquareMatrix blockMatrix, Block fallingBlock, Block nextBlock, LabeledValue score) {
-        this.squareMatrix = blockMatrix;
+    public GameLogic(SquareMatrix squareMatrix, Block fallingBlock, Block nextBlock, LabeledValue score) {
+        this.squareMatrix = squareMatrix;
         this.fallingBlock = fallingBlock;
         this.nextBlock = nextBlock;
         this.score = score;
         
-        fallingBlockColumn = blockMatrix.getNumColumns() / 2;
+        fallingBlockColumn = squareMatrix.getNumColumns() / 2;
         
-        for (int j = 0; j < blockMatrix.getNumColumns(); j++) {
+        for (int j = 0; j < squareMatrix.getNumColumns(); j++) {
             topBlocks.add(j, null);
             topBlockRows.add(j, 0);
         }
         
-        fallingBlock.setTranslateX(squareMatrix.getTranslateX() + fallingBlock.getBoundsInParent().getWidth() * fallingBlockColumn);
+        fallingBlock.setTranslateX(this.squareMatrix.getTranslateX() + fallingBlock.getBoundsInParent().getWidth() * fallingBlockColumn);
         fallingBlock.setTranslateY(-fallingBlock.getBoundsInParent().getHeight());
     }
     

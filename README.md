@@ -14,8 +14,8 @@ From the command line, run `gradlew run` (Windows) or `./gradlew run` (macOS and
 ## Gameplay
 
 The gameplay bears resemblance to *Tetris* and *Columns*: blocks, consisting of three randomly colored squares, fall from the top of the screen to a well.
-**Orientation** of the blocks **cannot be changed**, but the squares within them can be **shifted circularly** (⬆️ navigation key).
-The falling block **can be moved horizontally** in both directions (⬅️ and ➡️ navigation keys), and its falling **can be sped up** (⬇️ navigation key).
+**Orientation** of the blocks **cannot be changed**, but the squares within them can be **shifted circularly** (<kbd>↑</kbd> navigation key).
+The falling block **can be moved horizontally** in both directions (<kbd>←</kbd> and <kbd>→</kbd> navigation keys), and its falling **can be sped up** (<kbd>↓</kbd> navigation key).
 Once the block hits bottom of the well, or another block, the following rule is applied: if **three or more** squares of the **same** color are **adjacent**, they **disappear**, blocks **above** them **fall down**, which **may trigger a chain reaction**. If five or more squares disappear, bottom row disappears, regardless of colors of the squares within it.
 
 ## Fonts and audio

@@ -19,8 +19,6 @@
 
 package askov.schoolprojects.cg.coloris.sprites;
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import javafx.animation.Animation;
@@ -49,7 +47,7 @@ public class Square extends Sprite {
         CYCLAMEN (Color.web("0xCC00CC")),
         NULL     (Color.TRANSPARENT);
 
-        private static final List<SquareColor> SQUARE_COLORS = Collections.unmodifiableList(Arrays.asList(values()));
+        private static final List<SquareColor> SQUARE_COLORS = List.of(values());
         private static final int NUM_SQUARE_COLORS = SQUARE_COLORS.size();
         private static final Random RANDOM = new Random();
 
@@ -112,6 +110,13 @@ public class Square extends Sprite {
     }
 
     @Override
+    public void update() {
+        rectangle.setFill(blockColor.getColor());
+        triangle1.setFill(blockColor.getColor().darker());
+        triangle2.setFill(blockColor.getColor().brighter());
+    }
+
+    @Override
     public double getWidth() {
         return width;
     }
@@ -157,13 +162,6 @@ public class Square extends Sprite {
             animation.setOnFinished(event -> blockColor = DEFAULT_SQUARE_COLOR);
         }
         return animation;
-    }
-
-    @Override
-    public void update() {
-        rectangle.setFill(blockColor.getColor());
-        triangle1.setFill(blockColor.getColor().darker());
-        triangle2.setFill(blockColor.getColor().brighter());
     }
 
 }

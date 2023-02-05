@@ -1,10 +1,13 @@
 # Coloris
 
+[![CodeFactor](https://www.codefactor.io/repository/github/danijelaskov/coloris/badge/master)](https://www.codefactor.io/repository/github/danijelaskov/coloris/overview/master)
+![Build with Gradle](https://github.com/DanijelAskov/coloris/actions/workflows/gradle.yml/badge.svg)
+
 ![Gameplay demonstration](demo/gameplay.gif)
 
 ## Inspiration
 
-A 2D JavaFX application inspired by *Coloris*, a single-player puzzle video game, that was originally released in 1990, for *Comodore Amiga* family of personal computers.
+A 2D JavaFX application inspired by *Coloris*, a single-player puzzle video game, that was originally released in 1990, for *Commodore Amiga* family of personal computers.
 
 ## Setup
 

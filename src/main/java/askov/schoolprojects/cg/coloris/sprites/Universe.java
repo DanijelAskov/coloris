@@ -120,6 +120,10 @@ public class Universe extends Sprite {
             super.getChildren().add(star);
         }
     }
+
+    @Override
+    public void update() {
+    }
     
     @Override
     public double getWidth() {
@@ -129,11 +133,6 @@ public class Universe extends Sprite {
     @Override
     public double getHeight() {
         return height;
-    }
-
-    @Override
-    public void update() {
-
     }
 
 }

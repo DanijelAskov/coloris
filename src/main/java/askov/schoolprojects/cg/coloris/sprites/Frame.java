@@ -93,22 +93,22 @@ public class Frame extends Sprite {
         
         public void setFillType(FillType fillType) {
             switch (fillType) {
-                case BLUE:
+                case BLUE -> {
                     outerRectangle.setFill(OUTER_BLUE_GRADIENT);
                     innerRectangle.setFill(INNER_BLUE_GRADIENT);
-                    break;
-                case BLUE_INVERTED:
+                }
+                case BLUE_INVERTED -> {
                     outerRectangle.setFill(OUTER_BLUE_INVERTED_GRADIENT);
                     innerRectangle.setFill(INNER_BLUE_INVERTED_GRADIENT);
-                    break;
-                case YELLOW:
+                }
+                case YELLOW -> {
                     outerRectangle.setFill(OUTER_BLUE_GRADIENT);
                     innerRectangle.setFill(INNER_YELLOW_GRADIENT);
-                    break;
-                case YELLOW_INVERTED:
+                }
+                case YELLOW_INVERTED -> {
                     outerRectangle.setFill(OUTER_BLUE_INVERTED_GRADIENT);
                     innerRectangle.setFill(INNER_YELLOW_INVERTED_GRADIENT);
-                    break;
+                }
             }
         }
 
@@ -166,22 +166,22 @@ public class Frame extends Sprite {
         
         public void setFillType(FillType fillType) {
             switch (fillType) {
-                case BLUE:
+                case BLUE -> {
                     outerArc.setFill(OUTER_BLUE_GRADIENT);
                     innerArc.setFill(INNER_BLUE_GRADIENT);
-                    break;
-                case BLUE_INVERTED:
+                }
+                case BLUE_INVERTED -> {
                     outerArc.setFill(OUTER_BLUE_INVERTED_GRADIENT);
                     innerArc.setFill(INNER_BLUE_INVERTED_GRADIENT);
-                    break;
-                case YELLOW:
+                }
+                case YELLOW -> {
                     outerArc.setFill(OUTER_BLUE_GRADIENT);
                     innerArc.setFill(INNER_YELLOW_GRADIENT);
-                    break;
-                case YELLOW_INVERTED:
+                }
+                case YELLOW_INVERTED -> {
                     outerArc.setFill(OUTER_BLUE_INVERTED_GRADIENT);
                     innerArc.setFill(INNER_YELLOW_INVERTED_GRADIENT);
-                    break;
+                }
             }
         }
 
@@ -275,6 +275,10 @@ public class Frame extends Sprite {
     }
 
     @Override
+    public void update() {
+    }
+
+    @Override
     public double getWidth() {
         return totalWidth;
     }
@@ -282,11 +286,6 @@ public class Frame extends Sprite {
     @Override
     public double getHeight() {
         return totalHeight;
-    }
-    
-    @Override
-    public void update() {
-
     }
 
 }

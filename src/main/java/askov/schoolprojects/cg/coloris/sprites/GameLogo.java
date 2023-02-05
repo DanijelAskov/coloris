@@ -52,7 +52,6 @@ public class GameLogo extends Sprite {
 
     @Override
     public void update() {
-        
     }
 
     @Override

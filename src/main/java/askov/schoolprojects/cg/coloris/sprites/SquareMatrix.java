@@ -62,6 +62,17 @@ public class SquareMatrix extends Sprite {
     }
 
     @Override
+    public void update() {
+        for (int i = 0; i < numRows; i++) {
+            for (int j = 0; j < numColumns; j++) {
+                squares[i][j].setTranslateX(j * squareWidth);
+                squares[i][j].setTranslateY(i * squareHeight);
+                squares[i][j].update();
+            }
+        }
+    }
+
+    @Override
     public double getWidth() {
         return width;
     }
@@ -105,17 +116,6 @@ public class SquareMatrix extends Sprite {
             }
         }
         return false;
-    }
-
-    @Override
-    public void update() {
-        for (int i = 0; i < numRows; i++) {
-            for (int j = 0; j < numColumns; j++) {
-                squares[i][j].setTranslateX(j * squareWidth);
-                squares[i][j].setTranslateY(i * squareHeight);
-                squares[i][j].update();
-            }
-        }
     }
 
 }

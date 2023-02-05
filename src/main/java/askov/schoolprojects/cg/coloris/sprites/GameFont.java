@@ -37,12 +37,10 @@ public class GameFont {
     public GameFont(FontType fontType, double size) {
         try {
             switch (fontType) {
-                case SEGMENTED_DISPLAY:
+                case SEGMENTED_DISPLAY ->
                     font = Font.loadFont(Thread.currentThread().getContextClassLoader().getResource("fonts/digital-7-mono.ttf").toExternalForm(), size);
-                    break;
-                case MAIN_GAME_FONT:
+                case MAIN_GAME_FONT ->
                     font = Font.loadFont(Thread.currentThread().getContextClassLoader().getResource("fonts/computerfont.ttf").toExternalForm(), size);
-                    break;
             }
         } catch (Exception exception) {
             font = Font.font("Consolas", size);

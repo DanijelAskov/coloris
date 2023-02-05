@@ -1,25 +1,24 @@
 plugins {
     id 'application'
     id 'java'
-    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
-sourceCompatibility = JavaVersion.VERSION_11
-targetCompatibility = sourceCompatibility
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
-repositories {
-    jcenter()
-}
-
-dependencies {
-    // Add third-party dependencies here
-}
+group 'askov.schoolprojects.cg.coloris'
+version '1.0'
 
 application {
     mainClassName = 'askov.schoolprojects.cg.coloris.Coloris'
 }
 
 javafx {
-    version = JavaVersion.VERSION_11
+    version = '19'
     modules = ['javafx.controls', 'javafx.media']
+}
+
+repositories {
+    mavenCentral()
 }

@@ -77,7 +77,7 @@ public class GameLogic {
         Square topBlock;
         double fallingBlockY = fallingBlock.getTranslateY() + fallingBlock.getBottomSquare().getTranslateY() + fallingBlock.getBottomSquare().getBoundsInParent().getHeight();
         switch (fallingBlockMoveDirection) {
-            case LEFT:
+            case LEFT -> {
                 if (fallingBlockColumn > 0) {
                     topBlock = topBlocks.get(fallingBlockColumn - 1);
                     if (topBlock != null && fallingBlockY + CRITICAL_DISTANCE >= squareMatrix.getTranslateY() + topBlock.getTranslateY()) {
@@ -86,8 +86,8 @@ public class GameLogic {
                     fallingBlock.setTranslateX(fallingBlock.getTranslateX() - fallingBlock.getBoundsInParent().getWidth());
                     fallingBlockColumn--;
                 }
-                break;
-            case RIGHT:
+            }
+            case RIGHT -> {
                 if (fallingBlockColumn < squareMatrix.getNumColumns() - 1) {
                     topBlock = topBlocks.get(fallingBlockColumn + 1);
                     if (topBlock != null && fallingBlockY + CRITICAL_DISTANCE >= squareMatrix.getTranslateY() + topBlock.getTranslateY()) {
@@ -96,7 +96,7 @@ public class GameLogic {
                     fallingBlock.setTranslateX(fallingBlock.getTranslateX() + fallingBlock.getBoundsInParent().getWidth());
                     fallingBlockColumn++;
                 }
-                break;
+            }
         }
     }
     

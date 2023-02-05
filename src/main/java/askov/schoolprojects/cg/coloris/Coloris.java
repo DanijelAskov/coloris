@@ -96,20 +96,12 @@ public class Coloris extends Application {
         scene.setOnKeyPressed(event -> {
             if (fallingBlock != null) {
                 switch (event.getCode()) {
-                    case UP:
-                        gameLogic.reorderFallingBlockSquares();
-                        break;
-                    case DOWN:
-                        gameLogic.speedUpFallingBlock();
-                        break;
-                    case LEFT:
-                        gameLogic.moveFallingBlockHorizontally(GameLogic.MoveDirection.LEFT);
-                        break;
-                    case RIGHT:
-                        gameLogic.moveFallingBlockHorizontally(GameLogic.MoveDirection.RIGHT);
-                        break;
-                    default:
-                        break;
+                    case UP -> gameLogic.reorderFallingBlockSquares();
+                    case DOWN -> gameLogic.speedUpFallingBlock();
+                    case LEFT -> gameLogic.moveFallingBlockHorizontally(GameLogic.MoveDirection.LEFT);
+                    case RIGHT -> gameLogic.moveFallingBlockHorizontally(GameLogic.MoveDirection.RIGHT);
+                    default -> {
+                    }
                 }
             }
         });

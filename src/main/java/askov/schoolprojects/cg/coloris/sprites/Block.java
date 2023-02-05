@@ -60,6 +60,14 @@ public class Block extends Sprite {
             return null;
         }
     }
+
+    @Override
+    public void update() {
+        for (int i = 0; i < numSquares; i++) {
+            squares[i].setTranslateY(i * height / numSquares);
+            squares[i].update();
+        }
+    }
     
     @Override
     public double getWidth() {
@@ -82,16 +90,16 @@ public class Block extends Sprite {
     public void reorderSquares(ReorderDirection reorderDirection) {
         Square temp;
         switch (reorderDirection) {
-            case UP:
+            case UP -> {
                 temp = squares[0];
                 if (numSquares - 1 >= 0) System.arraycopy(squares, 1, squares, 0, numSquares - 1);
                 squares[numSquares - 1] = temp;
-                break;
-            case DOWN:
+            }
+            case DOWN -> {
                 temp = squares[numSquares - 1];
                 System.arraycopy(squares, 0, squares, 1, numSquares - 1);
                 squares[0] = temp;
-                break;
+            }
         }
     }
     
@@ -109,14 +117,6 @@ public class Block extends Sprite {
 
     public void reorderSquares() {
         reorderSquares(DEFAULT_REORDER_DIRECTION);
-    }
-
-    @Override
-    public void update() {
-        for (int i = 0; i < numSquares; i++) {
-            squares[i].setTranslateY(i * height / numSquares);
-            squares[i].update();
-        }
     }
 
 }

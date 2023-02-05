@@ -40,7 +40,6 @@ public class GameOverLabel extends Sprite {
     
     @Override
     public void update() {
-        
     }
 
     @Override
